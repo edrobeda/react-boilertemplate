@@ -10,18 +10,34 @@ class Menu extends Component {
   	render() {
     	return (
 			<div className="menu">
+                <div className="menuItem">
+                    <Link to="/">
+                        <div className="mainFont textRight">
+                            <img className="logo" src={Imgs.logo} alt=""/>
+                        </div>
+                    </Link>
+                </div>
 				<div className="menuItem">
 					<Link to="/">
-					    <h2 className="menuFont textRight">
+					    <div className="mainFont textRight">
                             Home
-                        </h2>
-                    </Link>
-                    <Link to="/manager">
-                        <h2 className="menuFont textRight">
-                            MANAGER
-                        </h2>
+                        </div>
                     </Link>
 				</div>
+                <div className="menuItem">
+                    <Link to="/manager">
+                        <div className="mainFont textRight">
+                            MANAGER
+                        </div>
+                    </Link>
+                </div>
+                <div className="menuItem">
+                    <Link to="/manager">
+                        <div className="mainFont textRight">
+                            MANAGER
+                        </div>
+                    </Link>
+                </div>
 			</div>
 	    );
   	}

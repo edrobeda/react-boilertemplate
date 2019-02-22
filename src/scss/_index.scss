@@ -1,5 +1,41 @@
 /*-----------------------------------*\
-  $Common Elements
+COMMON OBJECTS
 \*-----------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+.mainBody{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
 
+.App {
+  text-align: center;
+}
+.page{
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: gray;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+a:hover{
+  color: unset;
+}
+
+.mainError{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  min-height: 300px;
+}
+.bold{
+  font-weight: 600;
+}
 

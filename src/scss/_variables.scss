@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script:400,700|Roboto+Slab:100,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400|Lobster|Oleo+Script:400,700');
 /*-----------------------------------*\
-  $Colors
+COLORS
 \*-----------------------------------*/
-
 $primary: #ddd;
 $secundary: #333;
 
 /*-----------------------------------*\
-  $Fonts
+FONTS
 \*-----------------------------------*/
-
 .mainFont{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 .menuFont{
@@ -21,6 +19,3 @@ $secundary: #333;
 .hightlightFont{
     font-family: 'Lobster', cursive;
 }
-
-
-

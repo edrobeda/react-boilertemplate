@@ -1,21 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Oleo+Script:400,700|Roboto+Slab:100,400");
+/*-----------------------------------*
+VARIABLES
+*-----------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400|Lobster|Oleo+Script:400,700");
+/*-----------------------------------*\
+COLORS
+\*-----------------------------------*/
+/*-----------------------------------*\
+FONTS
+\*-----------------------------------*/
 @import url(~antd/dist/antd.css);
-body {
-  margin: 0;
-  padding: 0; }
-
-.mainBody {
-  width: 1280px;
-  margin: 0 auto; }
-
-/*-----------------------------------*\
-  $Colors
-\*-----------------------------------*/
-/*-----------------------------------*\
-  $Fonts
-\*-----------------------------------*/
 .mainFont {
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Roboto', serif; }
 
 .menuFont {
   font-family: 'Oleo Script', cursive; }
@@ -23,9 +18,43 @@ body {
 .hightlightFont {
   font-family: 'Lobster', cursive; }
 
+/*-----------------------------------*
+INDEX
+*-----------------------------------*/
 /*-----------------------------------*\
-  $Common Elements
+COMMON OBJECTS
 \*-----------------------------------*/
+body {
+  margin: 0;
+  padding: 0; }
+
+.mainBody {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #ddd; }
+
+.App {
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: gray; }
+
+a {
+  text-decoration: none;
+  color: unset; }
+
+a:hover {
+  color: unset; }
+
+.mainError {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  min-height: 300px; }
+
+.bold {
+  font-weight: 600; }
+
 /*-----------------------------------*
 XTRAS
 *-----------------------------------*/
@@ -2669,45 +2698,21 @@ XTRAS
 SITE
 *-----------------------------------*/
 /*-----------------------------------*\
-  $Common Elements
+COMMON OBJECTS
 \*-----------------------------------*/
-/*-----------------------------------*
-MENU
-*-----------------------------------*/
-/*-----------------------------------*\
-  $MENU
-\*-----------------------------------*/
-.menu {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 10px;
-  background-color: #333;
-  min-height: 80px;
-  max-height: 120px;
-  padding: 15px;
-  text-align: center; }
-  .menu h1, .menu h2, .menu h3, .menu h4, .menu h5, .menu h6 {
-    Font-family: 'Lobster', cursive;
-    color: #fff; }
+body {
+  margin: 0;
+  padding: 0; }
 
-/*-----------------------------------*
-Internal Site
-*-----------------------------------*/
-/*-----------------------------------*\
-  COMMON ELEMENTS
-\*-----------------------------------*/
-/*-----------------------------------*\
-  $baseApp
-\*-----------------------------------*/
+.mainBody {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #ddd; }
+
 .App {
   text-align: center; }
 
-.page {
-  padding: 15px; }
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lobster', cursive;
   color: gray; }
 
 a {
@@ -2723,6 +2728,40 @@ a:hover {
   align-content: center;
   min-height: 300px; }
 
+.bold {
+  font-weight: 600; }
+
+/*-----------------------------------*
+MENU
+*-----------------------------------*/
+/*-----------------------------------*\
+  $MENU
+\*-----------------------------------*/
+.menu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+  min-height: 80px;
+  max-height: 120px;
+  padding: 15px;
+  text-align: center; }
+  .menu .menuItem {
+    display: grid;
+    align-content: center; }
+    .menu .menuItem a {
+      color: #333; }
+  .menu .menuItem:hover {
+    background-color: #aaaa; }
+    .menu .menuItem:hover a {
+      color: #fff; }
+
+/*-----------------------------------*
+Internal Site
+*-----------------------------------*/
+/*-----------------------------------*\
+SITE
+\*-----------------------------------*/
 /*-----------------------------------*
 FOOTER
 *-----------------------------------*/
@@ -2734,4 +2773,4 @@ FOOTER
 
 @media screen and (max-width: 600px) {
   .mainBody {
-    background-color: red; } }
+    font-size: 24px; } }

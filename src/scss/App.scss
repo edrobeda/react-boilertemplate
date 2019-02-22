@@ -1,13 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-.mainBody{
-    width: 1280px;
-    margin: 0 auto;
-}
 
+/*-----------------------------------*
+VARIABLES
+*-----------------------------------*/
 @import "variables";
+
+/*-----------------------------------*
+INDEX
+*-----------------------------------*/
 @import "index";
 
 /*-----------------------------------*
@@ -36,6 +35,8 @@ FOOTER
 @import "footer";
 
 @import "media/mobile";
+@import "media/tablets";
+@import "media/xlarge";
 
 @import '~antd/dist/antd.css';
 
