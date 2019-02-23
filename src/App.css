@@ -29,9 +29,9 @@ body {
   padding: 0; }
 
 .mainBody {
-  width: 1280px;
+  width: 1180px;
   margin: 0 auto;
-  background-color: #ddd; }
+  padding: 0 15px 0 15px; }
 
 .App {
   text-align: center; }
@@ -2705,9 +2705,9 @@ body {
   padding: 0; }
 
 .mainBody {
-  width: 1280px;
+  width: 1180px;
   margin: 0 auto;
-  background-color: #ddd; }
+  padding: 0 15px 0 15px; }
 
 .App {
   text-align: center; }
@@ -2745,13 +2745,18 @@ MENU
   min-height: 80px;
   max-height: 120px;
   padding: 15px;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
   .menu .menuItem {
     display: grid;
     align-content: center; }
     .menu .menuItem a {
       color: #333; }
   .menu .menuItem:hover {
+    animation-name: bounce;
+    transform-origin: center center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     background-color: #aaaa; }
     .menu .menuItem:hover a {
       color: #fff; }

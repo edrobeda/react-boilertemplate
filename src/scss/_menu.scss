@@ -11,6 +11,7 @@
   max-height: 120px;
   padding: 15px;
   text-align: center;
+  background-color: #fff;
 
   .menuItem{
     display: grid;
@@ -20,6 +21,11 @@
     }
   }
   .menuItem:hover{
+    animation-name: bounce;
+    transform-origin: center center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
     background-color: #aaaa;
     a{
       color: #fff
